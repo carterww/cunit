@@ -1,0 +1,7 @@
+.cache
+test_example
+compile_commands.json
+
+*.out
+*.o
+
