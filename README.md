@@ -7,4 +7,5 @@ CUnit is an incomplete unit testing library for C/C++. The motivation for creati
 5. Proivides the option to output the results in an easily parsable format (probably JSON).
 6. Runs a customizable amount of testing suites concurrently.
 7. Runs individual tests in testing suites serially.
+
 There is probably something out there that loosely fulfills these requirements, but writing my own allows me to tailor it to my exact needs.
