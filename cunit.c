@@ -16,6 +16,8 @@
 #include "cassert.h"
 #include "cunit.h"
 
+#include "args.c"
+
 #define __CUNIT_TEST_OUT_BLOCK_SIZE 512
 
 #define RESET_COLOR_OUT "\x1b[0m"
@@ -78,8 +80,9 @@ static int __did_test_fail(int status);
 static char *__get_failure_reason(int status);
 static const char *__strsignal(int sig_num);
 
-int main(void)
+int main(int argc, char *argv[])
 {
+	struct arguments *args = arguments_get(argc, argv);
 	// TODO: Free malloc'd stuff
 	// TODO: Make suites run concurrently
 	// TODO: Add command line args for
